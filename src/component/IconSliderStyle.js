@@ -5,18 +5,23 @@ export const IconMainGrid = styled(Grid)`
 position: relative;
 `;
 
-export const ButtonGrid = styled(Grid)`
-width:10%;
-height:100%;
-background-color: grey;
-position: absolute;
-padding:150px;
-z-index:10;
+export const ButtonGrid = styled(Grid)(
+    ({right,left
+    })=>({
+    width:"5% ! important",
+height:"100%",
+backgroundColor: "grey",
+position: "absolute",
+padding: "150px 50px",
+zIndex: "10",
+display:"none",
+left: `${left || "none"}`,
+right: `${right || "none"}`,
+})
+);
 
-`;
 
-// left: ${props => props.left || null};
-// right: ${props => props.right || null};
+
 
 export const ContentGrid = styled(Grid)`
 width: 180px;
@@ -34,7 +39,7 @@ margin-left: 35px;
 
 export const ViewButton = styled(Button)`
 display: none;
-background-color: #E32320;
+background-color: #E32320 ! important;
 color: white;
 width: 153px;
 height: 48px; 

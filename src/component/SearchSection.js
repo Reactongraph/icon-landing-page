@@ -5,6 +5,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import {SearchbarGrid} from './SearchSectionStyle';
 
 export default function SearchSection() {
     return (
@@ -19,7 +20,7 @@ export default function SearchSection() {
                         to directly connect you with artists you admire.
                     </Typography>
                 </Grid>
-                <Grid style={{ display: "flex", justifyContent: "space-between", alignItems: "center", boxShadow: "0px 8px 40px 0px #00000014", width: "80%", height: "72px" }}>
+                <SearchbarGrid>
                     <TextField id='search' type='search' label='Porfolio review, Photoshop, Canon...' sx={{ width: "30%", height: "48px", margin:"0px"  }}></TextField>
                     <Grid style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "24px" }}>
                         <FormControl fullWidth style={{ width: "192px"}}>
@@ -52,7 +53,7 @@ export default function SearchSection() {
                         <SearchIcon  sx={{padding:"9px", backgroundColor:"#E32320",color:"white",fontSize:"10px", width:"64px", height:"48px", borderRadius:"5px", marginRight:"20px"}}/>
                         {/* </Grid> */}
                     </Grid>
-                </Grid>
+                </SearchbarGrid>
             </Grid>
         </>
     )

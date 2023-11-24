@@ -22,8 +22,6 @@ export default function IconSlider() {
     speed: 500,
     slidesToShow: 4.2,
     slidesToScroll: 1,
-    centerPadding: "60px",
-    arrows: false,
     customPaging: function (i) {
       return (
         <div
@@ -67,15 +65,12 @@ export default function IconSlider() {
     <IconMainGrid>
       <Typography fontSize="28px" fontWeight={800} marginTop="60px" marginLeft="40px">Featured Icons</Typography>
       <Slider {...settings} ref={slickRef}>
-      <ButtonGrid onClick={previous}>
-        <ArrowBackIosNewIcon style={{width:"60px", height:"59px"}}/>
-      </ButtonGrid>
-      <ButtonGrid onClick={next}>
-      <ArrowForwardIosIcon  style={{width:"60px", height:"59px"}}/>
-      </ButtonGrid>
+        {/* <ButtonGrid onClick={previous} left={100} className='arrowbutton'>
+          <ArrowBackIosNewIcon style={{ width: "60px", height: "59px" }} />
+        </ButtonGrid> */}
         {ImageSlider.map((item) =>
-          <Grid>
-            <img src={item.ImgUrl} alt='sliderIcon' style={{ display: "flex", justifyContent: "center", position: "relative" }} />
+          <Grid className='grid-main'>
+            <img className = 'icon-img' src={item.ImgUrl} alt='sliderIcon' style={{ display: "flex", justifyContent: "center", position: "relative" }} />
             <ContentGrid>
               <Typography fontSize="28px" fontWeight={800} variant='h4'>
                 {item.Heading}
@@ -83,16 +78,18 @@ export default function IconSlider() {
               <Typography fontSize="14px" fontWeight={400}>
                 {item.SubHeading}
               </Typography>
-              <Typography borderBottom = "1px solid #E32320" width= "50%"></Typography>
-              <Typography display="none" fontSize="14px" fontWeight={700}>Business / Creative</Typography>
-              <ViewButton>View Icon</ViewButton>
+              <Typography borderBottom="1px solid #E32320" width="50%" className='red-border'></Typography>
+              <Typography display="none" fontSize="14px" fontWeight={700} className='view-content'>Business / Creative</Typography>
+              <ViewButton className='view-button'>View Icon</ViewButton>
               <Typography fontSize="14px" fontWeight={400}>
                 {item.Paragraph}
               </Typography>
             </ContentGrid>
           </Grid>
         )}
-     
+        {/* <ButtonGrid onClick={next} right={0} className='arrowbutton'>
+          <ArrowForwardIosIcon style={{ width: "60px", height: "59px" }} />
+        </ButtonGrid> */}
       </Slider>
     </IconMainGrid>
   );

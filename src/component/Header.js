@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { MainGrid, HeadToolbar,TabItem,LoginButton } from './HeaderStyle';
+import { MainGrid, HeadToolbar,TabItem,LoginButton, AccountButton } from './HeaderStyle';
 
 export default function Header() {
   return (
@@ -32,7 +32,7 @@ export default function Header() {
           </Grid>
           <Grid>
           <LoginButton>Login</LoginButton>
-          <Button style={{backgroundColor:"black", color:"white",textTransform:"none"}}>Create an account</Button>
+          <AccountButton>Create an account</AccountButton>
           </Grid>
         </HeadToolbar>
       </MainGrid>
