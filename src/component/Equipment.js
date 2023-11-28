@@ -8,7 +8,12 @@ import responsiveValue from "./responsive";
 import { Grid } from "@mui/material";
 import Slider from "react-slick";
 import { LeftButton, HeadingGrid } from "./GroupsSliderStyle";
-import {SliderMainGrid, HeadingTypo, ParagraphTypo, EquipViewButton} from './EquipmentStyle';
+import {
+  SliderMainGrid,
+  HeadingTypo,
+  ParagraphTypo,
+  EquipViewButton,
+} from "./EquipmentStyle";
 import { SliderHeadingTypo } from "./IconSliderStyle";
 
 export default function Equipment() {
@@ -48,17 +53,21 @@ export default function Equipment() {
                 objectFit: "cover",
               }}
             />
-            <Grid style={{display:"flex", flexDirection:"column"}}>
-            <HeadingTypo variant="h5" className="equip-heading">{item.heading}</HeadingTypo>
-            <ParagraphTypo variant="p">{item.paragraph}</ParagraphTypo>
-            <AvatarGroup total={19} className="equipment-avatar">
-              <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
-              <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
-              <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
-              <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
-              <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
-            </AvatarGroup>
-            <EquipViewButton className="view-button">View Icon</EquipViewButton>
+            <Grid style={{ display: "flex", flexDirection: "column" }}>
+              <HeadingTypo variant="h5" className="equip-heading">
+                {item.heading}
+              </HeadingTypo>
+              <ParagraphTypo variant="p">{item.paragraph}</ParagraphTypo>
+              <AvatarGroup total={19} className="equipment-avatar">
+                <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
+                <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
+                <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
+                <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
+                <Avatar alt="Remy Sharp" src="/Images/Avatar.svg" />
+              </AvatarGroup>
+              <EquipViewButton className="equip-view-button">
+                View Icon
+              </EquipViewButton>
             </Grid>
           </SliderMainGrid>
         ))}

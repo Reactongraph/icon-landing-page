@@ -43,9 +43,9 @@ export const GroupSlider = [
     iconimg: "/Images/seaworld.svg",
   },
   {
-    imgurl: "/Images/universalstudio.png",
-    heading: "Universal Studios",
-    iconimg: "/Images/universal.svg",
+    imgurl: "/Images/roundWater.png",
+    heading: "National Geographic",
+    iconimg: "/Images/national.svg",
   },
   {
     imgurl: "/Images/sunset.png",

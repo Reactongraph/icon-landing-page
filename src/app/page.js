@@ -5,6 +5,7 @@ import GroupsSlider from '@/component/GroupsSlider';
 import Equipment from '@/component/Equipment';
 import SoftwareSection from '@/component/SoftwareSection';
 import StayUpdateSection from '@/component/StayUpdateSection';
+import Footer from '@/component/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <GroupsSlider/>
     <SoftwareSection/>
     <StayUpdateSection/>
+    <Footer/>
     </>
   )
 }

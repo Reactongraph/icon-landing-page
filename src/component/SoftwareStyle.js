@@ -1,10 +1,18 @@
 "use client";
 
-import styled from "@emotion/styled";
-import { Grid, Typography, Button } from "@mui/material";
+import styled from '@emotion/styled';
+import {Grid, Typography, Button} from '@mui/material';
+
+export const HeadingGrid = styled(Grid)`
+display: flex;
+justify-content: space-between;
+align-item: center;
+`;
+
+
 
 export const SliderMainGrid = styled(Grid)`
-  display: flex !important;
+  display: grid !important;
   justify-content: center;
   align-items: center;
 `;
@@ -23,7 +31,7 @@ export const EquipViewButton = styled(Button)`
   display: none;
   background-color: #ffffff !important;
   color: #e32320;
-  width: 289px;
+  width: 229px;
   height: 48px;
   border-radius: 6px;
   font-family: "Nunito Sans", sans-serif;
@@ -39,5 +47,9 @@ export const EquipViewButton = styled(Button)`
     border-radius: 6px;
     background: linear-gradient(--red-10, rgba(218, 11, 9, 0.1));
     color: #e32320;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
   }
 `;
