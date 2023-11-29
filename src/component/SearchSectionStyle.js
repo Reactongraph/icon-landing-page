@@ -5,8 +5,8 @@ import {
   Typography,
   TextField,
   InputLabel,
-  Select,
-  FormControl,
+  DialogContentText,
+  Dialog,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -105,6 +105,7 @@ export const RightSearchGrid = styled(Grid)`
   align-items: center;
   justify-content: center;
   gap: 24px;
+  position: relative;
 `;
 
 export const SearchTextField = styled(TextField)`
@@ -120,6 +121,18 @@ export const InputLabels = styled(InputLabel)`
   font-weight: 700;
 `;
 
+export const SelectGid = styled(Grid)`
+  width: 118px;
+  cursor: pointer;
+`;
+
+export const SelectTypo = styled(Typography)`
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: ${(props) => (props.open ? "red" : "none")};
+`;
+
 export const LeftSearchIcon = styled(SearchIcon)`
   padding: 9px;
   background-color: #e32320;
@@ -131,11 +144,43 @@ export const LeftSearchIcon = styled(SearchIcon)`
   margin-right: 20px;
 `;
 
-export const SearchSelect = styled(Select)`
-  height: 55px;
-  margin: 0px;
+export const Dialogsection = styled(Dialog)`
+  .MuiDialog-container {
+    .MuiPaper-root {
+      width: 100%;
+      max-width: 700px;
+      position: absolute;
+      right: 8%;
+      bottom: -15px;
+    }
+  }
+
+  .MuiBackdrop-root {
+    background-color: transparent;
+  }
+
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 
-export const SearchFormControl = styled(FormControl)`
-  width: 192px;
+export const DialogContentsection = styled(DialogContentText)`
+  display: flex;
+  gap: 40px;
+`;
+
+export const HeadingTypo = styled(Typography)`
+  font-family: "Nunito Sans", sans-serif;
+  color: red;
+  font-weight: 600;
+  font-size: 18px;
+`;
+
+export const ListTypo = styled(Typography)`
+  font-family: "Nunito Sans", sans-serif;
+`;
+
+export const Sections = styled(Grid)`
+  display: grid;
+  gap: 5px;
 `;

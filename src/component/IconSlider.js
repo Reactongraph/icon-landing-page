@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Link } from "@mui/material";
 import Slider from "react-slick";
 import { ImageSlider } from "./data";
 import NextArrow from "./NextArrow";
@@ -73,7 +73,9 @@ export default function IconSlider() {
               <ParagraphTypo className="view-content">
                 Business / Creative
               </ParagraphTypo>
-              <ViewButton className="view-button">View Icon</ViewButton>
+              <Link href="/icon-profile" style={{ textDecoration: "none" }}>
+                <ViewButton className="view-button">View Icon</ViewButton>
+              </Link>
               <SubHeadingTypo>{item.paragraph}</SubHeadingTypo>
             </ContentGrid>
           </Grid>

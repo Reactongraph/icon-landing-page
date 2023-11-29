@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { MenuItem, Box, Divider, Grid } from "@mui/material";
+import { DialogContent, Slide, Grid } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import {
   MainGrid,
   HeadingGrid,
@@ -10,87 +11,41 @@ import {
   IconSpan,
   ParagraphTypo,
   SearchTextField,
-  InputLabels,
   RightSearchGrid,
   LeftSearchIcon,
-  SearchSelect,
-  SearchFormControl,
+  HeadingTypo,
+  Sections,
+  DialogContentsection,
+  ListTypo,
+  SelectGid,
+  SelectTypo,
+  Dialogsection,
 } from "./SearchSectionStyle";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="right" ref={ref} {...props} />;
+});
 
 export default function SearchSection() {
-  const [state, setState] = useState({ left: false });
+  const [open, setOpen] = useState(false);
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
+  const [topic, setTopic] = useState(false);
 
-    setState({ ...state, [anchor]: open });
+  const handleClickOpen = () => {
+    setOpen(true);
   };
 
-  const Specialitylist = (anchor) => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 220 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <Grid style={{ display: "flex" }}>
-        {["Creative", "Softwares", "Business"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </Grid>
-      <Divider />
-      <List>
-        {["Login", "Create an account"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  const handleClose = () => {
+    setOpen(false);
+  };
 
-  const Topiclist = (anchor) => (
-    <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 220 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <Grid style={{ display: "flex" }}>
-        {["How it works", "About us", "Categories", "FAQs"].map(
-          (text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemText primary={text} />
-            </ListItem>
-          )
-        )}
-      </Grid>
-      <Grid>
-        {["Login", "Create an account"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </Grid>
-    </Box>
-  );
+  const handleTopicOpen = () => {
+    setTopic(true);
+  };
+
+  const handleTopicClose = () => {
+    setTopic(false);
+  };
 
   return (
     <MainGrid>
@@ -111,53 +66,88 @@ export default function SearchSection() {
           type="search"
           label="Porfolio review, Photoshop, Canon..."
         ></SearchTextField>
+
         <RightSearchGrid>
-          {["left"].map((anchor) => (
-            <React.Fragment key={anchor}>
-              <div
-                onClick={toggleDrawer(anchor, true)}
-                style={{
-                  width: "118px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                Speciality
-                <KeyboardArrowDownIcon />
-              </div>
-              <Drawer
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-              >
-                {Specialitylist(anchor)}
-              </Drawer>
-            </React.Fragment>
-          ))}
-
-          {["left"].map((anchor) => (
-            <React.Fragment key={anchor}>
-              <div
-                onClick={toggleDrawer(anchor, true)}
-                style={{
-                  width: "118px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                }}
-              >
-                Topic
-                <KeyboardArrowDownIcon />
-              </div>
-              <Drawer
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-              >
-                {Topiclist(anchor)}
-              </Drawer>
-            </React.Fragment>
-          ))}
-
+          <Grid>
+            <SelectGid onClick={handleClickOpen}>
+              <SelectTypo open={open}>
+                Speciality <KeyboardArrowDownIcon />
+              </SelectTypo>
+            </SelectGid>
+            <Dialogsection
+              open={open}
+              TransitionComponent={Transition}
+              keepMounted
+              onClose={handleClose}
+              aria-describedby="alert-dialog-slide-description"
+            >
+              <DialogContent>
+                <DialogContentsection id="alert-dialog-slide-description">
+                  <Sections>
+                    <HeadingTypo>Creative</HeadingTypo>
+                    <ListTypo>Edit my photo</ListTypo>
+                    <ListTypo>Portfolio review</ListTypo>
+                    <ListTypo>Website review</ListTypo>
+                    <ListTypo>Post processing techniques</ListTypo>
+                  </Sections>
+                  <Sections>
+                    <HeadingTypo>Softwares</HeadingTypo>
+                    <ListTypo>Photoshop</ListTypo>
+                    <ListTypo>Lightroom Classic</ListTypo>
+                    <ListTypo>Lightroom CC</ListTypo>
+                    <ListTypo>Illustrator</ListTypo>
+                  </Sections>
+                  <Sections>
+                    <HeadingTypo>Business</HeadingTypo>
+                    <ListTypo>Handling talent and models</ListTypo>
+                    <ListTypo>Communicating with clients</ListTypo>
+                    <ListTypo>Commercial questions</ListTypo>
+                    <ListTypo>Agent-related questions</ListTypo>
+                  </Sections>
+                </DialogContentsection>
+              </DialogContent>
+            </Dialogsection>
+          </Grid>
+          <Grid>
+            <SelectGid onClick={handleTopicOpen}>
+              <SelectTypo open={topic}>
+                Topic <KeyboardArrowDownIcon />
+              </SelectTypo>
+            </SelectGid>
+            <Dialogsection
+              open={topic}
+              TransitionComponent={Transition}
+              keepMounted
+              onClose={handleTopicClose}
+              aria-describedby="alert-dialog-slide-description"
+            >
+              <DialogContent>
+                <DialogContentsection id="alert-dialog-slide-description">
+                  <Sections>
+                    <HeadingTypo>Creative</HeadingTypo>
+                    <ListTypo>Edit my photo</ListTypo>
+                    <ListTypo>Portfolio review</ListTypo>
+                    <ListTypo>Website review</ListTypo>
+                    <ListTypo>Post processing techniques</ListTypo>
+                  </Sections>
+                  <Sections>
+                    <HeadingTypo>Softwares</HeadingTypo>
+                    <ListTypo>Photoshop</ListTypo>
+                    <ListTypo>Lightroom Classic</ListTypo>
+                    <ListTypo>Lightroom CC</ListTypo>
+                    <ListTypo>Illustrator</ListTypo>
+                  </Sections>
+                  <Sections>
+                    <HeadingTypo>Business</HeadingTypo>
+                    <ListTypo>Handling talent and models</ListTypo>
+                    <ListTypo>Communicating with clients</ListTypo>
+                    <ListTypo>Commercial questions</ListTypo>
+                    <ListTypo>Agent-related questions</ListTypo>
+                  </Sections>
+                </DialogContentsection>
+              </DialogContent>
+            </Dialogsection>
+          </Grid>
           <LeftSearchIcon />
         </RightSearchGrid>
       </SearchbarGrid>

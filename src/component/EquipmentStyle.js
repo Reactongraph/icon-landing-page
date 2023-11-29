@@ -23,7 +23,7 @@ export const EquipViewButton = styled(Button)`
   display: none;
   background-color: #ffffff !important;
   color: #e32320;
-  width: 289px;
+  width: 4.3%;
   height: 48px;
   border-radius: 6px;
   font-family: "Nunito Sans", sans-serif;

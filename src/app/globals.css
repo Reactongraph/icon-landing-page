@@ -79,13 +79,12 @@
       }
     }
     &&:hover {
-      .equip-view-button{
+      .equip-view-button {
         display: block;
         position: absolute;
         bottom: 0;
       }
     }
-   
 
     &&:hover {
       .group-slider-avatar {
@@ -127,11 +126,6 @@
       transform: scale(1.5);
     }
   }
-  &&:hover {
-    .group-img {
-      /* transform: translate(50%, 20%); */
-    }
-  }
 }
 
 .grid-main {
@@ -155,13 +149,7 @@
   }
 }
 
-/* @media only screen and (max-width: 900px) {
-  .equip-view-button {
-    width: 100%;
-  }
-} */
-
-
-/* .slick-slide {
-  margin-right: 30px;
-} */
+.MuiRating-root{
+  color: #E32320;
+ 
+}
