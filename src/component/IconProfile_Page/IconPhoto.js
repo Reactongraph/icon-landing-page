@@ -3,14 +3,12 @@ import DoneAllIcon from "@mui/icons-material/DoneAll";
 import VolunteerActivismOutlinedIcon from "@mui/icons-material/VolunteerActivismOutlined";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import Box from "@mui/material/Box";
-import Rating from "@mui/material/Rating";
+import { Box, Grid, Link, Rating } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
 import { labels } from "./const";
 import {
   MainGrid,
   ProfileGrid,
-  VideoGrid,
   InformationGrid,
   Img,
   TopGrid,
@@ -24,12 +22,13 @@ import {
   BookSpan,
   BookButton,
   LanguageGrid,
-  CountryGrid,
   RatingGrid,
   ReviewTypo,
   SocialGrid,
   SocialIconGrid,
+  ChipItem,
 } from "./IconPhotoStyle";
+import CardMedia from "@mui/material/CardMedia";
 
 export default function IconPhoto() {
   const value = 4;
@@ -46,8 +45,20 @@ export default function IconPhoto() {
             <FacebookOutlinedIcon style={{ color: "white" }} />
           </SocialIconGrid>
         </SocialGrid>
+        <Grid>
+          <CardMedia
+            component="iframe"
+            image={"/Images/video.mp4"}
+            sx={{
+              width: "100%",
+              height: "100% ",
+              borderRadius: "30px",
+              padding: "0px 15px",
+            }}
+          />
+        </Grid>
       </ProfileGrid>
-      <VideoGrid></VideoGrid>
+
       <InformationGrid>
         <TopGrid>
           <LabelIconGrid>
@@ -71,7 +82,9 @@ export default function IconPhoto() {
               <br />
               <BookSpan>From $100 USD</BookSpan>
             </LabelTypo>
+            <Link href ="/book-icon">
             <BookButton>Book Icon</BookButton>
+            </Link>
           </BookIconGrid>
 
           <ContentTypo>
@@ -105,8 +118,18 @@ export default function IconPhoto() {
         </TopGrid>
 
         <BottomGrid>
-          <LanguageGrid>Languages</LanguageGrid>
-          <CountryGrid>Country</CountryGrid>
+          <LanguageGrid>
+            Languages
+            <ChipItem label="Spanish" />
+            <ChipItem label="English" />
+            <ChipItem label="French" />
+          </LanguageGrid>
+          <LanguageGrid>
+            Country
+            <ChipItem label="Span" />
+            <ChipItem label="Time Zone" />
+            <ChipItem label="GMT" />
+          </LanguageGrid>
         </BottomGrid>
       </InformationGrid>
     </MainGrid>

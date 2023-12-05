@@ -3,9 +3,13 @@ import styled from "@emotion/styled";
 import { Grid, Typography } from "@mui/material";
 
 export const HeadingGrid = styled(Grid)`
-  margin: 25px 64px;
+  padding: 25px 64px;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 600px) {
+    padding: 16px;
+  }
 `;
 
 export const CircleImage = styled.img`
@@ -17,8 +21,8 @@ export const CircleImage = styled.img`
   position: absolute;
   z-index: -1;
 
-  @media only screen and (max-width: 600px) {
-    right: 5%;
+  @media only screen and (max-width: 900px) {
+    display: none;
   }
 `;
 
@@ -32,6 +36,9 @@ export const HeadTypo = styled(Typography)`
   text-align: center;
   position: relative;
 
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const Span = styled.span`
@@ -44,36 +51,38 @@ export const Span = styled.span`
   z-index: 10;
 `;
 
-
 export const HeaderGrid = styled(Grid)`
-margin: 21px 64px;
-`;
+  padding: 21px 64px;
 
+  @media only screen and (max-width: 900px) {
+    padding: 16px;
+  }
+`;
 
 export const MenuText = styled(Typography)`
-font-family: "Nunito Sans", sans-serif;
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-color: #75748E;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #75748e;
 `;
 export const BoldText = styled.span`
-font-family: "Nunito Sans", sans-serif;
-font-size: 18px;
-font-weight: 700;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-color: #E32320;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #e32320;
 `;
 
 export const H3Typo = styled(Typography)`
-font-family: "Manrope", sans-serif;
-font-size: 38px;
-font-weight: 800;
-line-height: 45px;
-letter-spacing: 0em;
-text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
 `;

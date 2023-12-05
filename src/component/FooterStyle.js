@@ -4,10 +4,14 @@ import styled from "@emotion/styled";
 import { Grid, Typography } from "@mui/material";
 
 export const MainGrid = styled(Grid)`
-  margin: 0px 64px;
+  padding: 0px 64px;
   display: flex;
   justify-content: space-between;
   align-item: center;
+
+  @media only screen and (max-width: 900px) {
+  padding: 0px 16px;
+  }
 `;
 
 export const FooterGrid = styled(Grid)`

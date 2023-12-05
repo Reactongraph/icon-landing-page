@@ -4,12 +4,13 @@ import {
   FransGroupHead,
   FransGroupImg,
   FransGroupLogo,
+  FransMainGrid
 } from "./IconPhotoStyle";
 import { FransGroupData } from "./const";
 
 export default function FransGroup() {
   return (
-    <Grid style={{ margin: "72px 64px", display: "grid", gap: "24px" }}>
+    <FransMainGrid>
       <FransGroupHead variant="h4">Frans’ Groups</FransGroupHead>
       <Grid style={{ display: "flex", gap: "32px" }}>
         {FransGroupData.map((image) => (
@@ -26,6 +27,6 @@ export default function FransGroup() {
           </Grid>
         ))}
       </Grid>
-    </Grid>
+    </FransMainGrid>
   );
 }

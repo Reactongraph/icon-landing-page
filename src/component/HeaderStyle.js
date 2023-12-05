@@ -16,6 +16,7 @@ export const HeadToolbar = styled(Toolbar)`
 export const Logo = styled.img`
   width: 70px;
   height: 32px;
+
   @media only screen and (max-width: 900px) {
     width: 60px;
     height: 25px;

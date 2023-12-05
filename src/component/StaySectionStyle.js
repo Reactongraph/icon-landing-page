@@ -9,6 +9,10 @@ export const MainGrid = styled(Grid)`
   gap: 10px;
   margin: 89px 64px;
   background: linear-gradient(168.9deg, #030212 29.54%, #353441 90.54%);
+
+  @media only screen and (max-width: 900px) {
+    margin: 16px;
+  }
 `;
 
 export const InputGrid = styled(Grid)`

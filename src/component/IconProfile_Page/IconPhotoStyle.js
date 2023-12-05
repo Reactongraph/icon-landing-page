@@ -1,30 +1,63 @@
 "use client";
 import styled from "@emotion/styled";
-import { Grid, Typography, Button } from "@mui/material";
+import { Grid, Typography, Button, Chip } from "@mui/material";
 
 export const MainGrid = styled(Grid)`
   display: flex;
   justify-content: space-between;
-  margin: 0px 64px;
+  padding: 0px 64px;
+
+  @media only screen and (max-width: 900px) {
+    display: grid;
+    gap: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 16px;
+  }
 `;
 
 export const ProfileGrid = styled(Grid)`
   position: relative;
+  display: flex;
+
+  @media only screen and (max-width: 900px) {
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: grid;
+    gap: 20px;
+  }
 `;
 
 export const Img = styled.img`
-  width: 304px;
+  width: 54%;
   height: 443px;
   border-radius: 10px;
+
+  @media only screen and (max-width: 900px) {
+    width: 44%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
-export const VideoGrid = styled(Grid)``;
-
 export const InformationGrid = styled(Grid)`
-  width: 652px;
+  width: 50%;
   height: 447px;
   display: grid;
   gap: 36px;
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    gap: 30px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    gap: 10px;
+  }
 `;
 
 export const TopGrid = styled(Grid)`
@@ -44,7 +77,6 @@ export const BookIconGrid = styled(Grid)`
 `;
 
 export const ContentTypo = styled(Typography)`
-  width: 552px;
   font-family: "Nunito Sans", sans-serif;
 `;
 
@@ -71,7 +103,7 @@ export const BoldSpan = styled.span`
 `;
 
 export const LabelTypo = styled(Typography)`
-  width: 448px;
+  width: 70%;
   font-family: "Nunito Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -90,7 +122,7 @@ export const BookSpan = styled.span`
 `;
 
 export const BookButton = styled(Button)`
-  width: 184px;
+  width: 100%;
   height: 48px;
   padding: 12px, 25px, 12px, 25px;
   border-radius: 6px;
@@ -102,18 +134,28 @@ export const BookButton = styled(Button)`
 `;
 
 export const RatingGrid = styled(Grid)`
-  width: 276px;
+  width: 44%;
   display: flex;
 `;
 
 export const ReviewTypo = styled(Typography)`
-  width: 104px;
+  width: 40%;
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
+`;
+
+export const FransMainGrid = styled(Grid)`
+  padding: 72px 64px;
+  display: grid;
+  gap: 24px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0px 16px;
+  }
 `;
 
 export const FransGroupHead = styled(Typography)`
@@ -144,6 +186,10 @@ export const SocialGrid = styled(Grid)`
   position: absolute;
   bottom: 20px;
   left: 80px;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 export const SocialIconGrid = styled(Grid)`
   border: 1px solid white;
@@ -161,6 +207,20 @@ export const BottomGrid = styled(Grid)`
   gap: 16px;
 `;
 
-export const LanguageGrid = styled(Grid)``;
+export const LanguageGrid = styled(Grid)`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+`;
 
-export const CountryGrid = styled(Grid)``;
+export const ChipItem = styled(Chip)`
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: none;
+  color: #030212;
+`;
