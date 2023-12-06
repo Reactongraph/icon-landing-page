@@ -1,13 +1,18 @@
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {Nunito} from "next/font/google";
+import { Nunito } from "next/font/google";
+import { Manrope } from "next/font/google";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "700", "800"],
+});
 
 const nunito = Nunito({
   subsets: ["latin"],
-  weight: ['400', '700', '800'],
-})
-
+  weight: ["400", "700", "800"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -68,7 +73,9 @@ export default function RootLayout({ children }) {
           href="css/lightgallery-bundle.css"
         /> */}
       </head>
-      <body className={nunito.className}>{children}</body>
+      <body className={`${nunito.className} ${manrope.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
