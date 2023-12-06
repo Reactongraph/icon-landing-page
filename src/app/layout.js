@@ -4,7 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import {Nunito} from "next/font/google";
 
 const nunito = Nunito({
-  subsets: ["latin"]
+  subsets: ["latin"],
+  weight: ['400', '700', '800'],
 })
 
 
