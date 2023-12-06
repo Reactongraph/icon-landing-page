@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.14.18",
+    "@next/font": "^14.0.3",
     "justified-gallery": "^0.1.0",
     "lightbox.js-react": "^0.9.6",
     "lightgallery": "^2.1.0-beta.4",

@@ -1,9 +1,12 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {Nunito} from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({
+  subsets: ["latin"]
+})
+
 
 export const metadata = {
   title: "Create Next App",
@@ -25,7 +28,7 @@ export default function RootLayout({ children }) {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,9 +65,9 @@ export default function RootLayout({ children }) {
           type="text/css"
           rel="stylesheet"
           href="css/lightgallery-bundle.css"
-        />
+        /> */}
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={nunito.className}>{children}</body>
     </html>
   );
 }
