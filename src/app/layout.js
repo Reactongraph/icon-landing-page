@@ -27,16 +27,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:wght@100&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
-          rel="stylesheet"
-        ></link>
+       
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -72,15 +63,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="css/lightgallery-bundle.css"
         />
-
-
-<script src="js/lightgallery.umd.js"></script>
-
-    <script src="js/lightgallery.min.js"></script>
-
-
-    <script src="js/plugins/lg-thumbnail.umd.js"></script>
-    <script src="js/plugins/lg-zoom.umd.js"></script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

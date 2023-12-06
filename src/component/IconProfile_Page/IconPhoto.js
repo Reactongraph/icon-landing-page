@@ -82,14 +82,14 @@ export default function IconPhoto() {
               <br />
               <BookSpan>From $100 USD</BookSpan>
             </LabelTypo>
-            <Link href ="/book-icon">
-            <BookButton>Book Icon</BookButton>
+            <Link href="/book-icon">
+              <BookButton>Book Icon</BookButton>
             </Link>
           </BookIconGrid>
 
           <ContentTypo>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industry s standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. Lorem Ipsum is simply
             dummy text.

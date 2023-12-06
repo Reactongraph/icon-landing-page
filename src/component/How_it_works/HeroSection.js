@@ -8,16 +8,15 @@ import {
   TextTypo,
   BookButton,
   VideoCard,
-  CircleImg
+  CircleImg,
 } from "./HeroSectionStyle";
 
 export default function HeroSection() {
   return (
     <MainGrid>
       <ContentGrid>
-   
         <H1 variant="h1">
-        <CircleImg src="/Images/img-vector-meet.png"></CircleImg>
+          <CircleImg src="/Images/img-vector-meet.png"></CircleImg>
           Your talents
           <br />
           <Span>deserve the best</Span>

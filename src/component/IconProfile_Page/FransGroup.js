@@ -13,8 +13,9 @@ export default function FransGroup() {
     <FransMainGrid>
       <FransGroupHead variant="h4">Frans’ Groups</FransGroupHead>
       <Grid style={{ display: "flex", gap: "32px" }}>
-        {FransGroupData.map((image) => (
+        {FransGroupData.map((image, index) => (
           <Grid
+          key={index}
             style={{
               display: "flex",
               position: "relative",

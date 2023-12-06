@@ -20,6 +20,7 @@ import {
   LanguageGrid,
   ChipItem,
 } from "../../component/IconProfile_Page/IconPhotoStyle";
+import Image from 'next/image';
 
 export default function IconTopics() {
   var settings = {
@@ -82,7 +83,7 @@ export default function IconTopics() {
   };
   return (
     <MainGrid>
-      <img src="Images/FransLanting.svg"></img>
+      <Image src="Images/FransLanting.svg" alt="icon" width={304} height={443}/>
       <SliderGrid>
         <TopGrid>
           <TimeTypo>
@@ -94,11 +95,11 @@ export default function IconTopics() {
           </TimeTypo>
           <H4 variant="h4">What can your Icon help you with?</H4>
           <Slider {...settings}>
-            {BenefitsData.map((item) => (
-              <Grid style={{ display: "grid", gap: "8px", padding: "24px" }}>
+            {BenefitsData.map((item, index) => (
+              <Grid key={index} style={{ display: "grid", gap: "8px", padding: "24px" }}>
                 <H5 variant="h5">{item.heading}</H5>
-                {item.paragraph.map((listitem) => (
-                  <ListTypo>
+                {item.paragraph.map((listitem, index) => (
+                  <ListTypo key={index}>
                     <KeyboardArrowRightIcon style={{ color: "#E32320" }} />
                     {listitem.list}
                   </ListTypo>

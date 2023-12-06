@@ -4,6 +4,7 @@ import { PortfolioData } from "./const";
 import { CardMainGrid, CardPortTab, CardSessionTab } from "./PortSectionStyle";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
+import Image from 'next/image';
 
 export default function PortfolioSection() {
   return (
@@ -13,8 +14,8 @@ export default function PortfolioSection() {
         <CardSessionTab label="Session Examples" />
       </Tabs>
       <SlideshowLightbox className="container" showThumbnails={true}>
-        {PortfolioData.map((item) => (
-          <img src={item.url} alt={item.url} style={{width: {...item.width}, height:{...item.height}}}></img>
+        {PortfolioData.map((item, index) => (
+          <Image src={item.url} key = {index} alt={item.url} width = {item.width} height = {item.height}/>
         ))}
       </SlideshowLightbox>
     </CardMainGrid>

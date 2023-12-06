@@ -23,6 +23,7 @@ import {
   Logo,
   RightIcon,
 } from "../HeaderStyle";
+import Image from 'next/image';
 
 export default function ProfileHeader() {
   const [state, setState] = useState({ right: false });
@@ -86,10 +87,13 @@ export default function ProfileHeader() {
           </IconButton>
           <Grid>
             <Tabs aria-label="basic tabs example">
-              <img
+              <Image
                 src="/Images/categoriesVector.svg"
+                alt="circle"
+                width={78}
+                height={9}
                 style={{ position: "absolute", right: "24%", bottom: "15px" }}
-              ></img>
+              />
               <TabItem label="How it works" />
               <TabItem label="About us" />
               <TabItem label="Categories" style={{ fontWeight: "700" }} />

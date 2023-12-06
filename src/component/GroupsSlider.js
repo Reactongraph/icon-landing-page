@@ -16,6 +16,7 @@ import {
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
+import Image from 'next/image';
 
 export default function GroupsSlider() {
   var settings = {
@@ -42,13 +43,15 @@ export default function GroupsSlider() {
         </LeftButton>
       </HeadingGrid>
       <Slider {...settings}>
-        {GroupSlider.map((item) => (
-          <Grid className="grid-main">
+        {GroupSlider.map((item, index) => (
+          <Grid key = {index} className="grid-main">
             <Grid className="gradient"></Grid>
-            <img
+            <Image
               className="group-img"
               src={item.imgurl}
               alt="sliderIcon"
+              width={264}
+              height={384}
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -57,13 +60,11 @@ export default function GroupsSlider() {
               }}
             />
             <GroupContentGrid>
-              <img
+              <Image
                 src={item.iconimg}
                 alt="imageIcon"
-                style={{
-                  width: "170px",
-                  height: "118px",
-                }}
+                  width = {170}
+                  height = {118}
               />
               <HeadingTypo variant="h4" className="group-heading">
                 {item.heading}

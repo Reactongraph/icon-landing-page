@@ -3,6 +3,7 @@ import React from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { Grid, AvatarGroup, Avatar } from "@mui/material";
 import Slider from "react-slick";
+import Image from 'next/image';
 import { SoftwareSlider } from "./data";
 import responsiveValue from "./responsive";
 import { LeftButton } from "./GroupsSliderStyle";
@@ -38,12 +39,14 @@ export default function SoftwareSection() {
       </HeadingGrid>
 
       <Slider {...settings}>
-        {SoftwareSlider.map((item) => (
-          <SliderMainGrid>
+        {SoftwareSlider.map((item, index) => (
+          <SliderMainGrid key={index}>
             <Grid className="gradient"></Grid>
-            <img
+            <Image
               src={item.logourl}
               alt="sliderIcon"
+              width={64}
+              height={64}
               style={{ marginLeft: "-20px" }}
             />
             <Grid style={{ display: "flex", flexDirection: "column" }}>

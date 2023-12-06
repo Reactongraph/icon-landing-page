@@ -18,9 +18,9 @@ export default function MoreThanSection() {
     <MainGrid>
       <ContentGrid>
         <ImageGrid>
-          {ImageData.map((item) => (
-            <>
+          {ImageData.map((item, index) => (
               <Images
+              key ={index}
                 src={item.imgurl}
                 width={item.width}
                 bottom={item.bottom}
@@ -28,7 +28,6 @@ export default function MoreThanSection() {
                 left={item.left}
                 zIndex={item.zindex}
               />
-            </>
           ))}
         </ImageGrid>
         <TextGrid>

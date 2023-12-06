@@ -78,11 +78,11 @@ export default function BenefitSlider() {
     <MainGrid>
       <H4 variant="h4">What can your Icon help you with?</H4>
       <Slider {...settings}>
-        {BenefitsData.map((item) => (
-          <Grid style={{ display: "grid", gap: "8px" }}>
+        {BenefitsData.map((item, index) => (
+          <Grid key = {index} style={{ display: "grid", gap: "8px" }}>
             <H5 variant="h5">{item.heading}</H5>
-            {item.paragraph.map((listitem) => (
-              <ListTypo>
+            {item.paragraph.map((listitem, index) => (
+              <ListTypo key = {index}>
                 <KeyboardArrowRightIcon style={{ color: "#E32320" }} />
                 {listitem.list}
               </ListTypo>
