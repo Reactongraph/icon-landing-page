@@ -9,6 +9,7 @@ import {
   ColorText,
   Paragraph,
   MeetButton,
+  Images,
 } from "./MoreStyle";
 import { ImageData } from "./const";
 
@@ -19,17 +20,14 @@ export default function MoreThanSection() {
         <ImageGrid>
           {ImageData.map((item) => (
             <>
-              <img
+              <Images
                 src={item.imgurl}
-                style={{
-                 height: item.height,
-                  position: "absolute",
-                  bottom: item.bottom,
-                  right: item.right,
-                  left: item.left,
-                  zIndex: item.zindex
-                }}
-              ></img>
+                width={item.width}
+                bottom={item.bottom}
+                right={item.right}
+                left={item.left}
+                zIndex={item.zindex}
+              />
             </>
           ))}
         </ImageGrid>

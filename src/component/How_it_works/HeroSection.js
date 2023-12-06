@@ -1,13 +1,25 @@
 import React from "react";
 import CardMedia from "@mui/material/CardMedia";
-import { MainGrid, ContentGrid, H1, Span, TextTypo, BookButton } from "./HeroSectionStyle";
+import {
+  MainGrid,
+  ContentGrid,
+  H1,
+  Span,
+  TextTypo,
+  BookButton,
+  VideoCard,
+  CircleImg
+} from "./HeroSectionStyle";
 
 export default function HeroSection() {
   return (
     <MainGrid>
       <ContentGrid>
+   
         <H1 variant="h1">
-          Your talents<br/>
+        <CircleImg src="/Images/img-vector-meet.png"></CircleImg>
+          Your talents
+          <br />
           <Span>deserve the best</Span>
         </H1>
         <TextTypo>
@@ -17,16 +29,7 @@ export default function HeroSection() {
         </TextTypo>
         <BookButton>Book a session</BookButton>
       </ContentGrid>
-      <CardMedia
-        component="iframe"
-        image={"/Images/squareVideo.mp4"}
-        sx={{
-          width: "528px",
-          height: "380px",
-          borderRadius: "30px",
-          margin: "0px",
-        }}
-      />
+      <VideoCard component="iframe" image={"/Images/squareVideo.mp4"} />
     </MainGrid>
   );
 }

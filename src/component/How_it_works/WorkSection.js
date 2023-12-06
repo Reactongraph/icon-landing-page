@@ -7,6 +7,11 @@ import {
   Paragraph,
   ColorText,
   StepGrid,
+  CardGrid,
+  CardHeadGrid,
+  CardText,
+  H5,
+  Span,
 } from "./WorkSectionStyle";
 import { StepData } from "./const";
 
@@ -21,9 +26,16 @@ export default function WorkSection() {
       </TextGrid>
       <StepGrid>
         {StepData.map((item) => (
-          <div>
-          {item.heading}
-          </div>
+          <CardGrid>
+            <CardHeadGrid>
+              <H5>
+                <Span>{item.colortext}</Span> &nbsp;
+                {item.heading}
+              </H5>
+              <img src={item.icon} alt={item.icon}></img>
+            </CardHeadGrid>
+            <CardText>{item.subHeading}</CardText>
+          </CardGrid>
         ))}
       </StepGrid>
     </WorkGrid>
