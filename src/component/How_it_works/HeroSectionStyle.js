@@ -37,7 +37,7 @@ export const CircleImg = styled.img`
 `;
 
 export const H1 = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 64px;
   font-weight: 800;
   line-height: 78px;
@@ -53,7 +53,7 @@ export const Span = styled.span`
 `;
 
 export const TextTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 40px;
@@ -70,7 +70,7 @@ export const BookButton = styled(Button)`
   background-color: #e32320 !important;
   text-transform: none;
   color: white;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;

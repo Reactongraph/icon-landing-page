@@ -35,7 +35,7 @@ export const GroupContentGrid = styled(Grid)`
 
 export const HeadingTypo = styled(Typography)`
   font-size: 20px;
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-weight: 800;
   position: absolute;
   bottom: 0;

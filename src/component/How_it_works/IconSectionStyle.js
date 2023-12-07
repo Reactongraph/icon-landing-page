@@ -49,7 +49,7 @@ export const ContentGrid = styled(Grid)`
 `;
 
 export const HeadTypo = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 38px;
   font-weight: 800;
   line-height: 45px;
@@ -61,7 +61,7 @@ export const ColorText = styled.span`
 `;
 
 export const Paragraph = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -75,7 +75,7 @@ export const IconButton = styled(Button)`
   border-radius: 6px;
   background-color: #030212 !important;
   color: #ffffff;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
