@@ -81,6 +81,7 @@ export const IconSpan = styled.span`
 
 export const ParagraphTypo = styled(Typography)`
   font-size: 28px;
+  font-family: 'nunito', sans-serif;
   @media only screen and (max-width: 600px) {
     font-size: 20px;
   }
