@@ -86,7 +86,7 @@ export const SocialGrid = styled(Grid)`
 `;
 
 export const HeadingTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
@@ -95,7 +95,7 @@ export const HeadingTypo = styled(Typography)`
 `;
 
 export const ListTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
@@ -104,7 +104,7 @@ export const ListTypo = styled(Typography)`
 `;
 
 export const IconTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;

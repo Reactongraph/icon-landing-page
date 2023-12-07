@@ -24,7 +24,7 @@ export const InputGrid = styled(Grid)`
   background-color: #ffffff1a;
   justify-content: space-between;
   margin-top: 19px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
 `;
 
 export const SubscribeButton = styled(Grid)`
@@ -36,7 +36,7 @@ export const SubscribeButton = styled(Grid)`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
@@ -57,7 +57,7 @@ export const ContentGrid = styled(Grid)`
 `;
 
 export const HeadingTypo = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 48px;
   font-weight: 800;
   line-height: 60px;
@@ -68,7 +68,7 @@ export const HeadingTypo = styled(Typography)`
 `;
 
 export const ParagraphTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;

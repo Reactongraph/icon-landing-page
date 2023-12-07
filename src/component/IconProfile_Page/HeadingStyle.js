@@ -28,7 +28,7 @@ export const CircleImage = styled.img`
 
 export const HeadTypo = styled(Typography)`
   width: 65%;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
@@ -42,7 +42,7 @@ export const HeadTypo = styled(Typography)`
 `;
 
 export const Span = styled.span`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -60,7 +60,7 @@ export const HeaderGrid = styled(Grid)`
 `;
 
 export const MenuText = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -69,7 +69,7 @@ export const MenuText = styled(Typography)`
   color: #75748e;
 `;
 export const BoldText = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -79,7 +79,7 @@ export const BoldText = styled.span`
 `;
 
 export const H3Typo = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 38px;
   font-weight: 800;
   line-height: 45px;

@@ -18,12 +18,12 @@ export const SliderMainGrid = styled(Grid)`
 `;
 export const HeadingTypo = styled(Typography)`
   font-size: 20px;
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-weight: 800;
 `;
 export const ParagraphTypo = styled(Typography)`
   font-size: 18px;
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-weight: 600;
   color: #75748e;
 `;
@@ -34,7 +34,7 @@ export const EquipViewButton = styled(Button)`
   width: 229px;
   height: 48px;
   border-radius: 6px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-weight: 700;
   text-transform: none;
   font-size: 16px;

@@ -14,7 +14,7 @@ export const MainGrid = styled(Grid)`
 `;
 
 export const MainHeading = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
@@ -57,7 +57,7 @@ export const TopGrid = styled(Grid)`
 `;
 
 export const HeadTypo = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -70,7 +70,7 @@ export const HeadTypo = styled(Typography)`
 `;
 
 export const Span = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 20px;
@@ -80,7 +80,7 @@ export const Span = styled.span`
 `;
 
 export const SubTypo = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -89,7 +89,7 @@ export const SubTypo = styled.span`
 `;
 
 export const TimeSpan = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -106,7 +106,7 @@ export const BookSession = styled(Button)`
   color: white;
   text-transform: none;
   background-color: #e32320 !important;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
@@ -115,7 +115,7 @@ export const BookSession = styled(Button)`
 `;
 
 export const ContentTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;

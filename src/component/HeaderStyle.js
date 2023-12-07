@@ -33,7 +33,7 @@ export const TabItem = styled(Tab)`
   color: black;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
 
   @media only screen and (max-width: 900px) {
     display: none;
@@ -44,7 +44,7 @@ export const LoginButton = styled(Button)`
   color: black;
   text-transform: none;
   font-weight: 700;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
 
   @media only screen and (max-width: 900px) {
     display: none;
@@ -55,7 +55,7 @@ export const AccountButton = styled(Button)`
   color: white;
   text-transform: none;
   background-color: black !important;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-weight: 700;
   @media only screen and (max-width: 900px) {
     display: none;

@@ -67,7 +67,7 @@ export const TopGrid = styled(Grid)`
 
 export const LabelIconGrid = styled(Grid)`
   display: flex;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   gap: 24px;
 `;
 
@@ -77,11 +77,11 @@ export const BookIconGrid = styled(Grid)`
 `;
 
 export const ContentTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
 `;
 
 export const IconTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -94,7 +94,7 @@ export const IconTypo = styled(Typography)`
 `;
 
 export const BoldSpan = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -104,7 +104,7 @@ export const BoldSpan = styled.span`
 
 export const LabelTypo = styled(Typography)`
   width: 70%;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 40px;
@@ -113,7 +113,7 @@ export const LabelTypo = styled(Typography)`
 `;
 
 export const BookSpan = styled.span`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -127,7 +127,7 @@ export const BookButton = styled(Button)`
   padding: 12px, 25px, 12px, 25px;
   border-radius: 6px;
   gap: 10px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   text-transform: none;
   background-color: #e32320 !important;
   color: #ffffff;
@@ -140,7 +140,7 @@ export const RatingGrid = styled(Grid)`
 
 export const ReviewTypo = styled(Typography)`
   width: 40%;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -159,7 +159,7 @@ export const FransMainGrid = styled(Grid)`
 `;
 
 export const FransGroupHead = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -215,7 +215,7 @@ export const LanguageGrid = styled(Grid)`
 `;
 
 export const ChipItem = styled(Chip)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 20px;

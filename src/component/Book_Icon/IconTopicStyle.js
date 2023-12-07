@@ -14,7 +14,7 @@ export const MainGrid = styled(Grid)`
 `;
 
 export const TimeTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -24,7 +24,7 @@ export const TimeTypo = styled(Typography)`
 `;
 
 export const Span = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -33,7 +33,7 @@ export const Span = styled.span`
 `;
 
 export const H4 = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -43,7 +43,7 @@ export const H4 = styled(Typography)`
 `;
 
 export const H5 = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 20px;
   font-weight: 800;
   line-height: 22px;
@@ -53,7 +53,7 @@ export const H5 = styled(Typography)`
 `;
 
 export const ListTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -72,7 +72,7 @@ export const TopGrid = styled(Grid)`
 
 
 export const SubHeading = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;

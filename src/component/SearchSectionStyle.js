@@ -36,7 +36,7 @@ export const MainHeadingTypo = styled(Typography)`
   font-size: 64px;
   font-weight: 800;
   position: relative;
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   z-index: 10;
 
   @media only screen and (max-width: 900px) {
@@ -81,7 +81,6 @@ export const IconSpan = styled.span`
 
 export const ParagraphTypo = styled(Typography)`
   font-size: 28px;
-  font-family: "Nunito Sans", sans-serif;
   @media only screen and (max-width: 600px) {
     font-size: 20px;
   }
@@ -112,12 +111,12 @@ export const SearchTextField = styled(TextField)`
   width: 30%;
   height: 48px;
   margin: 0px;
-  font-family: "Nunito Sans", sans-serif !important;
+  font-family: "nunito", sans-serif !important;
 `;
 
 export const InputLabels = styled(InputLabel)`
   color: black;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-weight: 700;
 `;
 
@@ -127,7 +126,7 @@ export const SelectGid = styled(Grid)`
 `;
 
 export const SelectTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   display: flex;
   justify-content: space-between;
   color: ${(props) => (props.open ? "red" : "none")};
@@ -170,14 +169,14 @@ export const DialogContentsection = styled(DialogContentText)`
 `;
 
 export const HeadingTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   color: red;
   font-weight: 600;
   font-size: 18px;
 `;
 
 export const ListTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
 `;
 
 export const Sections = styled(Grid)`

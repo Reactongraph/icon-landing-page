@@ -11,7 +11,7 @@ export const MainGrid = styled(Grid)`
 `;
 
 export const H4 = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -21,7 +21,7 @@ export const H4 = styled(Typography)`
 `;
 
 export const H5 = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 20px;
   font-weight: 800;
   line-height: 22px;
@@ -32,7 +32,7 @@ export const H5 = styled(Typography)`
 `;
 
 export const ListTypo = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;

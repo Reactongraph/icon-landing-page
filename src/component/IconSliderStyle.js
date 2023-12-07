@@ -26,32 +26,32 @@ export const ViewButton = styled(Button)`
   width: 153px;
   height: 48px;
   border-radius: 6px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-weight: 700;
   text-transform: none;
   font-size: 16px;
 `;
 export const MainHeadingTypo = styled(Typography)`
   font-size: 28px;
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-weight: 800;
 `;
 export const SubHeadingTypo = styled(Typography)`
   font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-weight: 400;
 `;
 
 export const ParagraphTypo = styled(Typography)`
   display: none;
   font-size: 14px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-weight: 700;
 `;
 
 export const SliderHeadingTypo = styled(Typography)`
   font-size: 28px;
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-weight: 800;
   margin-top: 60px;
   margin-left: 40px;

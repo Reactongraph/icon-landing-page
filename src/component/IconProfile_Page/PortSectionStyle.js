@@ -12,7 +12,7 @@ export const CardMainGrid = styled(Grid)`
 `;
 
 export const CardPortTab = styled(Tab)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -23,7 +23,7 @@ export const CardPortTab = styled(Tab)`
 `;
 
 export const CardSessionTab = styled(Tab)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 28px;
   font-weight: 800;
   line-height: 32px;
@@ -77,7 +77,7 @@ export const ImageStyled = styled.img`
 
 export const Heading = styled(Typography)`
   display: grid;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -87,7 +87,7 @@ export const Heading = styled(Typography)`
 `;
 
 export const Paragraph = styled.span`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
