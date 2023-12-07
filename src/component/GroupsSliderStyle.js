@@ -39,6 +39,7 @@ export const HeadingTypo = styled(Typography)`
   font-weight: 800;
   position: absolute;
   bottom: 0;
+  z-index: 10;
 `;
 
 export const SliderAvatarGroup = styled(AvatarGroup)`

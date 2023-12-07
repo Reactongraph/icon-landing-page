@@ -37,7 +37,7 @@ export const CircleImg = styled.img`
 `;
 
 export const H1 = styled(Typography)`
-  font-family: '__Manrope_150a5c';
+  font-family: "__Manrope_150a5c";
   font-size: 64px;
   font-weight: 800;
   line-height: 78px;

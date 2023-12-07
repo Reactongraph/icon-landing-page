@@ -25,7 +25,7 @@ export default function StayUpdateSection() {
         <InputGrid>
           <TextField
             id="outlined-basic"
-            label="Email"
+            placeholder="Email"
             variant="outlined"
             style={{ color: "#A8A8A8", width: "484px" }}
           />

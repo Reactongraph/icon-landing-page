@@ -72,6 +72,7 @@
   &&:hover {
     .view-button {
       display: block;
+      z-index: 10;
     }
     &&:hover {
       .group-heading {
@@ -83,6 +84,7 @@
         display: block;
         position: absolute;
         bottom: 0;
+        margin-top: 20px;
       }
     }
 
@@ -90,6 +92,7 @@
       .group-slider-avatar {
         display: flex;
         width: 100%;
+        z-index: 10;
       }
     }
     &&:hover {
@@ -123,7 +126,8 @@
 
   &&:hover {
     .icon-img {
-      transform: scale(1.5);
+      transform: scale(1.3);
+      transition: 0.5s;
     }
   }
 }
@@ -164,4 +168,20 @@
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* .MuiAvatar-circular{
+background-color: white;
+border: 1px solid #e32320 !important;
+color: #e32320;
+} */
+
+.gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.12%);
+  position: absolute;
+  bottom: 7px;
+  width: 6%;
+  height: 50%;
+  z-index: 1;
+  border-radius: 10px;
 }

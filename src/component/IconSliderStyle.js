@@ -17,6 +17,7 @@ export const ContentGrid = styled(Grid)`
   align-items: center;
   gap: 5px;
   margin-left: 35px;
+  z-index: 10;
 `;
 
 export const ViewButton = styled(Button)`

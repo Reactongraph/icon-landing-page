@@ -36,7 +36,7 @@ export const MainHeadingTypo = styled(Typography)`
   font-size: 64px;
   font-weight: 800;
   position: relative;
-  font-family: '__Manrope_150a5c';
+  font-family: "__Manrope_150a5c";
   z-index: 10;
 
   @media only screen and (max-width: 900px) {
@@ -81,7 +81,7 @@ export const IconSpan = styled.span`
 
 export const ParagraphTypo = styled(Typography)`
   font-size: 28px;
-  font-family: 'nunito', sans-serif;
+  font-family: "nunito", sans-serif;
   @media only screen and (max-width: 600px) {
     font-size: 20px;
   }
@@ -92,8 +92,8 @@ export const SearchbarGrid = styled(Grid)`
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 8px 40px 0px #00000014;
-  width: 80%;
-  height: 72px;
+  width: 65%;
+  height: 74px;
 
   @media only screen and (max-width: 900px) {
     display: none;
@@ -124,6 +124,7 @@ export const InputLabels = styled(InputLabel)`
 export const SelectGid = styled(Grid)`
   width: 118px;
   cursor: pointer;
+  // position:relative;
 `;
 
 export const SelectTypo = styled(Typography)`
@@ -145,18 +146,25 @@ export const LeftSearchIcon = styled(SearchIcon)`
 `;
 
 export const Dialogsection = styled(Dialog)`
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+
   .MuiDialog-container {
-    .MuiPaper-root {
-      width: 100%;
-      max-width: 700px;
-      position: absolute;
-      right: 8%;
-      bottom: -15px;
-    }
+    justify-content: right;
   }
 
   .MuiBackdrop-root {
     background-color: transparent;
+  }
+
+  .MuiDialog-root {
+    .MuiModal-root {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+    }
   }
 
   @media only screen and (max-width: 900px) {
@@ -167,6 +175,7 @@ export const Dialogsection = styled(Dialog)`
 export const DialogContentsection = styled(DialogContentText)`
   display: flex;
   gap: 40px;
+  padding: 16px;
 `;
 
 export const HeadingTypo = styled(Typography)`

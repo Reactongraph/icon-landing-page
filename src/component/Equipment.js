@@ -40,7 +40,6 @@ export default function Equipment() {
       <Slider {...settings}>
         {EquipmentSlider.map((item, index) => (
           <SliderMainGrid key = {index}> 
-            <Grid className="gradient"></Grid>
             <Image
               className="group-img"
               src={item.logourl}

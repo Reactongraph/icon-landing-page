@@ -11,6 +11,7 @@ export const MainGrid = styled(Grid)`
 export const HeadToolbar = styled(Toolbar)`
   display: flex;
   justify-content: space-between;
+  padding: 0px 64px !important;
 `;
 
 export const Logo = styled.img`
@@ -52,11 +53,15 @@ export const LoginButton = styled(Button)`
 `;
 
 export const AccountButton = styled(Button)`
+  padding: 12px 25px 12px 25px;
+  border-radius: 6px;
   color: white;
   text-transform: none;
   background-color: black !important;
   font-family: "nunito", sans-serif;
   font-weight: 700;
+  margin-left: 32px;
+
   @media only screen and (max-width: 900px) {
     display: none;
   }

@@ -41,7 +41,6 @@ export default function SoftwareSection() {
       <Slider {...settings}>
         {SoftwareSlider.map((item, index) => (
           <SliderMainGrid key={index}>
-            <Grid className="gradient"></Grid>
             <Image
               src={item.logourl}
               alt="sliderIcon"

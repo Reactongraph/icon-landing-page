@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import { DialogContent, Slide, Grid } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import {
@@ -22,7 +22,7 @@ import {
   Dialogsection,
 } from "./SearchSectionStyle";
 
-const Transition = React.forwardRef(function Transition(props, ref) {
+const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="right" ref={ref} {...props} />;
 });
 
@@ -64,7 +64,7 @@ export default function SearchSection() {
         <SearchTextField
           id="search"
           type="search"
-          label="Porfolio review, Photoshop, Canon..."
+          placeholder="Porfolio review, Photoshop, Canon..."
         ></SearchTextField>
 
         <RightSearchGrid>
@@ -79,7 +79,7 @@ export default function SearchSection() {
               TransitionComponent={Transition}
               keepMounted
               onClose={handleClose}
-              aria-describedby="alert-dialog-slide-description"
+              // aria-describedby="alert-dialog-slide-description"
             >
               <DialogContent>
                 <DialogContentsection id="alert-dialog-slide-description">

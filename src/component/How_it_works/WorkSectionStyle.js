@@ -17,7 +17,7 @@ export const TextGrid = styled(Grid)`
   gap: 16px;
 `;
 export const H3Typo = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 38px;
   font-weight: 800;
   line-height: 45px;
@@ -31,7 +31,7 @@ export const ColorText = styled.span`
 `;
 
 export const Paragraph = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 40px;
@@ -69,7 +69,7 @@ export const CardHeadGrid = styled(Grid)`
 `;
 
 export const CardText = styled(Typography)`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
@@ -78,7 +78,7 @@ export const CardText = styled(Typography)`
 `;
 
 export const H5 = styled(Typography)`
-  font-family: "Manrope", sans-serif;
+  font-family: '__Manrope_150a5c';
   font-size: 20px;
   font-weight: 800;
   line-height: 22px;

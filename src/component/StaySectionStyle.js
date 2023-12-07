@@ -41,6 +41,7 @@ export const SubscribeButton = styled(Grid)`
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 0em;
+  cursor: pointer;
 `;
 
 export const ContentGrid = styled(Grid)`
