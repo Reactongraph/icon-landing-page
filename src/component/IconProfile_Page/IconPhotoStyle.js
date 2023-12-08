@@ -122,7 +122,7 @@ export const BookSpan = styled.span`
 `;
 
 export const BookButton = styled(Button)`
-  width: 100%;
+  width: 168px;
   height: 48px;
   padding: 12px, 25px, 12px, 25px;
   border-radius: 6px;

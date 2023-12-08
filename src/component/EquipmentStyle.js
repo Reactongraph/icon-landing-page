@@ -7,6 +7,7 @@ export const SliderMainGrid = styled(Grid)`
   display: flex !important;
   justify-content: center;
   align-items: center;
+  height: 180px;
 `;
 export const HeadingTypo = styled(Typography)`
   font-size: 20px;

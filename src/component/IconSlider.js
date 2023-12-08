@@ -2,7 +2,7 @@
 import React from "react";
 import { Grid, Typography, Link } from "@mui/material";
 import Slider from "react-slick";
-import Image from 'next/image';
+import Image from "next/image";
 import { ImageSlider } from "./data";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
@@ -50,18 +50,20 @@ export default function IconSlider() {
       <SliderHeadingTypo>Featured Icons</SliderHeadingTypo>
       <Slider {...settings}>
         {ImageSlider.map((item, index) => (
-          <Grid key={index} className="grid-main">
+          <Grid
+            key={index}
+            className="grid-main"
+            style={{ position: "relative", height: "400px" }}
+          >
             <Grid className="gradient"></Grid>
             <Image
               className="icon-img"
               src={item.imgurl}
               alt="sliderIcon"
-              width={260}
-              height={378}
+              sizes="100vw"
               style={{
-                display: "flex",
-                justifyContent: "center",
-                position: "relative",
+                width: "100%",
+                height: "auto",
                 objectFit: "cover",
               }}
             />

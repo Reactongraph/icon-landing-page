@@ -81,10 +81,9 @@
     }
     &&:hover {
       .equip-view-button {
+        width: auto;
         display: block;
-        position: absolute;
-        bottom: 0;
-        margin-top: 20px;
+        margin-top: 14px;
       }
     }
 
@@ -137,6 +136,16 @@
   width: 260px !important;
   border-radius: 10px;
 }
+/* @media only screen and (min-width: 1500px) {
+  .grid-main {
+    width: 300px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .grid-main {
+    width: 390px !important;
+  }
+} */
 
 .group-slider-avatar {
   width: 73%;
@@ -144,13 +153,13 @@
 }
 
 .equipment-avatar {
-  width: 73%;
+  width: fit-content;
+  margin-top: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-  .equipment-avatar {
-    width: 100%;
-  }
+.software-avatar {
+  width: fit-content;
+  margin-top: 22px;
 }
 
 .MuiRating-root {
@@ -180,7 +189,7 @@ color: #e32320;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.12%);
   position: absolute;
   bottom: 7px;
-  width: 6%;
+  width: 260px;
   height: 50%;
   z-index: 1;
   border-radius: 10px;
