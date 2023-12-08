@@ -13,7 +13,7 @@ import {
   ParagraphTypo,
   EquipViewButton,
 } from "./EquipmentStyle";
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Equipment() {
   var settings = {
@@ -39,7 +39,7 @@ export default function Equipment() {
 
       <Slider {...settings}>
         {EquipmentSlider.map((item, index) => (
-          <SliderMainGrid key = {index}> 
+          <SliderMainGrid key={index}>
             <Image
               className="group-img"
               src={item.logourl}

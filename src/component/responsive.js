@@ -1,6 +1,15 @@
 const responsiveValue = [
+  // {
+  //   breakpoint: 1945,
+  //   settings: {
+  //     slidesToShow: 4.1,
+  //     slidesToScroll: 3,
+  //     infinite: true,
+  //     dots: true,
+  //   },
+  // },
   {
-    breakpoint: 1445,
+    breakpoint: 1645,
     settings: {
       slidesToShow: 4.3,
       slidesToScroll: 3,

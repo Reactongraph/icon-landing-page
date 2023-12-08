@@ -1,30 +1,35 @@
+import FransLanting from "public/Images/FransLanting.svg";
+import RogerFishman from "public/Images/RogerFishman.svg";
+import SteveMcCurry from "public/Images/Steve McCurry.svg";
+import NatalieAmrossi from "public/Images/Natalie Amrossi.svg";
+
 export const ImageSlider = [
   {
-    imgurl: "/Images/FransLanting.svg",
+    imgurl: FransLanting,
     heading: "Frans Lanting",
     subHeading: "Wildlife Photography",
     paragraph: "From $100 USD",
   },
   {
-    imgurl: "/Images/RogerFishman.svg",
+    imgurl: RogerFishman,
     heading: "Roger Fishman",
     subHeading: "Landscape Photography",
     paragraph: "From $100 USD",
   },
   {
-    imgurl: "/Images/Steve McCurry.svg",
+    imgurl: SteveMcCurry,
     heading: "Steve McCurry",
     subHeading: "Portrait Photography",
     paragraph: "From $55 USD",
   },
   {
-    imgurl: "/Images/Natalie Amrossi.svg",
+    imgurl: NatalieAmrossi,
     heading: "Natalie Amrossi",
     subHeading: "Urban Photography",
     paragraph: "From $100 USD",
   },
   {
-    imgurl: "/Images/Steve McCurry.svg",
+    imgurl: SteveMcCurry,
     heading: "Steve McCurry",
     subHeading: "Portrait Photography",
     paragraph: "From $55 USD",

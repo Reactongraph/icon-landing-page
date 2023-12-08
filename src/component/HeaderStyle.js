@@ -12,6 +12,11 @@ export const HeadToolbar = styled(Toolbar)`
   display: flex;
   justify-content: space-between;
   padding: 0px 64px !important;
+
+  @media only screen and (max-width: 900px) {
+    padding: 0px 16px !important;
+  }
+
 `;
 
 export const Logo = styled.img`

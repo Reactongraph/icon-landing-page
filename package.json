@@ -17,7 +17,7 @@
     "justified-gallery": "^0.1.0",
     "lightbox.js-react": "^0.9.6",
     "lightgallery": "^2.1.0-beta.4",
-    "next": "14.0.3",
+    "next": "^13.5.5",
     "react": "^18",
     "react-dom": "^18",
     "react-slick": "^0.29.0",
